@@ -374,7 +374,7 @@ Options:
  --db-timeout     (default 60)
  --lock-timeout   (default 60)
 
-{% if_version gte:3.3.x %}
+{% if_version gte:3.5.x %}
  --nginx-conf-flags        (optional string)   flags that can be used to control
                                                how Nginx configuration templates are rendered
 {% endif_version %}
