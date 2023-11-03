@@ -347,8 +347,10 @@ Options:
  -c,--conf        (optional string) configuration file
  -p,--prefix      (optional string) prefix Kong is running at
  --nginx-conf     (optional string) custom Nginx configuration template
+{% if_version gte:3.5.x %}
  --nginx-conf-flags        (optional string) flags that can be used to control
                                              how Nginx configuration templates are rendered
+{% endif_version %}
 
 ```
 
